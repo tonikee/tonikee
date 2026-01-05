@@ -79,32 +79,18 @@ const Home = () => {
       {/* Services Preview */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* DIGI Card */}
             <Card className="border-2 border-lime-200 hover:border-lime-500 transition-all duration-300 hover:shadow-2xl group">
-              <CardContent className="p-8">
-                <div className="bg-gradient-to-br from-lime-500 to-green-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Smartphone className="w-8 h-8 text-white" />
+              <CardContent className="p-6">
+                <div className="bg-gradient-to-br from-lime-500 to-green-500 w-14 h-14 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Smartphone className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Tarifas DIGI</h3>
-                <p className="text-gray-600 mb-6">Las mejores tarifas de fibra y móvil sin permanencia. Te ayudamos con todo el proceso.</p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-lime-500 flex-shrink-0" />
-                    <span className="text-sm">Desde 10€/mes</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-lime-500 flex-shrink-0" />
-                    <span className="text-sm">Portabilidad gratuita</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-lime-500 flex-shrink-0" />
-                    <span className="text-sm">Configuración incluida</span>
-                  </li>
-                </ul>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Tarifas DIGI</h3>
+                <p className="text-gray-600 text-sm mb-4">Las mejores tarifas sin permanencia</p>
                 <Link to="/digi">
-                  <Button className="w-full bg-gradient-to-r from-lime-500 to-green-500 hover:from-lime-600 hover:to-green-600 text-white group-hover:shadow-xl transition-all duration-300">
-                    Ver tarifas <ArrowRight className="w-4 h-4 ml-2" />
+                  <Button className="w-full bg-gradient-to-r from-lime-500 to-green-500 hover:from-lime-600 hover:to-green-600 text-white group-hover:shadow-xl transition-all duration-300 text-sm">
+                    Ver tarifas <ArrowRight className="w-4 h-4 ml-1" />
                   </Button>
                 </Link>
               </CardContent>
@@ -112,29 +98,47 @@ const Home = () => {
 
             {/* Repairs Card */}
             <Card className="border-2 border-green-200 hover:border-green-500 transition-all duration-300 hover:shadow-2xl group">
-              <CardContent className="p-8">
-                <div className="bg-gradient-to-br from-green-500 to-emerald-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Zap className="w-8 h-8 text-white" />
+              <CardContent className="p-6">
+                <div className="bg-gradient-to-br from-green-500 to-emerald-500 w-14 h-14 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Zap className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Reparaciones Express</h3>
-                <p className="text-gray-600 mb-6">Reparamos tu móvil en menos de 1 hora. Presupuesto sin compromiso y garantía total.</p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-sm">Reparación en el acto</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-sm">Todas las marcas</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-sm">Hasta 6 meses de garantía</span>
-                  </li>
-                </ul>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Reparaciones Express</h3>
+                <p className="text-gray-600 text-sm mb-4">Reparamos en menos de 1 hora</p>
                 <Link to="/reparaciones">
-                  <Button className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white group-hover:shadow-xl transition-all duration-300">
-                    Ver servicios <ArrowRight className="w-4 h-4 ml-2" />
+                  <Button className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white group-hover:shadow-xl transition-all duration-300 text-sm">
+                    Ver servicios <ArrowRight className="w-4 h-4 ml-1" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Accessories Card */}
+            <Card className="border-2 border-amber-200 hover:border-amber-500 transition-all duration-300 hover:shadow-2xl group">
+              <CardContent className="p-6">
+                <div className="bg-gradient-to-br from-amber-500 to-yellow-500 w-14 h-14 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Shield className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Accesorios</h3>
+                <p className="text-gray-600 text-sm mb-4">Fundas, cargadores y más</p>
+                <Link to="/accesorios">
+                  <Button className="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-white group-hover:shadow-xl transition-all duration-300 text-sm">
+                    Ver catálogo <ArrowRight className="w-4 h-4 ml-1" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Unlock Card */}
+            <Card className="border-2 border-purple-200 hover:border-purple-500 transition-all duration-300 hover:shadow-2xl group">
+              <CardContent className="p-6">
+                <div className="bg-gradient-to-br from-purple-500 to-violet-500 w-14 h-14 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Award className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Liberaciones</h3>
+                <p className="text-gray-600 text-sm mb-4">Libera tu móvil en el acto</p>
+                <Link to="/liberaciones">
+                  <Button className="w-full bg-gradient-to-r from-purple-500 to-violet-500 hover:from-purple-600 hover:to-violet-600 text-white group-hover:shadow-xl transition-all duration-300 text-sm">
+                    Más info <ArrowRight className="w-4 h-4 ml-1" />
                   </Button>
                 </Link>
               </CardContent>
