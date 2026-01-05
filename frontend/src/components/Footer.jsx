@@ -55,7 +55,8 @@ const Footer = () => {
               <li className="hover:text-lime-500 transition-colors cursor-pointer">Fibra + Móvil</li>
               <li className="hover:text-lime-500 transition-colors cursor-pointer">Reparación de Pantallas</li>
               <li className="hover:text-lime-500 transition-colors cursor-pointer">Cambio de Batería</li>
-              <li className="hover:text-lime-500 transition-colors cursor-pointer">Reparaciones Express</li>
+              <li className="hover:text-lime-500 transition-colors cursor-pointer">Accesorios Móviles</li>
+              <li className="hover:text-lime-500 transition-colors cursor-pointer">Liberación de Móviles</li>
             </ul>
           </div>
 
