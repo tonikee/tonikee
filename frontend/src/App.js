@@ -7,6 +7,8 @@ import FloatingButtons from "./components/FloatingButtons";
 import Home from "./pages/Home";
 import DigiPage from "./pages/DigiPage";
 import RepairsPage from "./pages/RepairsPage";
+import AccessoriesPage from "./pages/AccessoriesPage";
+import UnlockPage from "./pages/UnlockPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import { Toaster } from "./components/ui/sonner";
@@ -21,6 +23,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/digi" element={<DigiPage />} />
             <Route path="/reparaciones" element={<RepairsPage />} />
+            <Route path="/accesorios" element={<AccessoriesPage />} />
+            <Route path="/liberaciones" element={<UnlockPage />} />
             <Route path="/sobre-nosotros" element={<AboutPage />} />
             <Route path="/contacto" element={<ContactPage />} />
           </Routes>
