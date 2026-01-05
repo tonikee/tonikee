@@ -4,7 +4,7 @@ export const contactInfo = {
   phone: '912385500',
   phoneFormatted: '91 238 55 00',
   email: 'friimovil@gmail.com',
-  address: 'Calle Río Llobregat, N.º 13 Local 3',
+  address: 'Calle Río Llobregat, Nº 13 Local 3',
   city: 'Móstoles',
   province: 'Madrid',
   metro: 'Metro Hospital de Móstoles',
@@ -112,6 +112,100 @@ export const repairServices = [
     icon: 'Volume2',
     time: '35 min',
     warranty: '3 meses'
+  }
+];
+
+export const accessoryCategories = [
+  {
+    id: 1,
+    name: 'Fundas y Carcasas',
+    description: 'Protección y estilo para tu móvil',
+    icon: 'ShieldCheck',
+    items: ['Fundas de silicona', 'Carcasas rígidas', 'Fundas con tapa', 'Fundas antigolpes']
+  },
+  {
+    id: 2,
+    name: 'Protectores de Pantalla',
+    description: 'Máxima protección contra rayones',
+    icon: 'Monitor',
+    items: ['Cristal templado', 'Antirreflejo', 'Antihuellas', 'Privacidad']
+  },
+  {
+    id: 3,
+    name: 'Cargadores y Cables',
+    description: 'Carga rápida y segura',
+    icon: 'Cable',
+    items: ['Cargadores de pared', 'Cargadores de coche', 'Cables USB-C', 'Cables Lightning']
+  },
+  {
+    id: 4,
+    name: 'Auriculares y Audio',
+    description: 'Sonido de calidad',
+    icon: 'Headphones',
+    items: ['Auriculares Bluetooth', 'Manos libres', 'Auriculares con cable', 'Altavoces portátiles']
+  },
+  {
+    id: 5,
+    name: 'Baterías Externas',
+    description: 'Energía en cualquier lugar',
+    icon: 'BatteryCharging',
+    items: ['Power bank 5000mAh', 'Power bank 10000mAh', 'Power bank 20000mAh', 'Carga inalámbrica']
+  },
+  {
+    id: 6,
+    name: 'Soportes y Accesorios',
+    description: 'Comodidad y funcionalidad',
+    icon: 'Smartphone',
+    items: ['Soportes de coche', 'Trípodes', 'Anillos de sujeción', 'Popsockets']
+  },
+  {
+    id: 7,
+    name: 'Almacenamiento',
+    description: 'Amplía tu capacidad',
+    icon: 'HardDrive',
+    items: ['Tarjetas microSD', 'Memorias USB', 'Adaptadores SD', 'Lectores de tarjetas']
+  },
+  {
+    id: 8,
+    name: 'Accesorios PC',
+    description: 'Para tu ordenador',
+    icon: 'MonitorSmartphone',
+    items: ['Ratones', 'Teclados', 'Webcams', 'Periféricos']
+  }
+];
+
+export const unlockOperators = [
+  {
+    id: 1,
+    name: 'Vodafone',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Vodafone_icon.svg/240px-Vodafone_icon.svg.png',
+    time: '24 horas',
+    method: 'Por IMEI',
+    instant: true
+  },
+  {
+    id: 2,
+    name: 'Movistar',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Movistar.svg/240px-Movistar.svg.png',
+    time: 'En el acto',
+    method: 'Por IMEI',
+    instant: true
+  },
+  {
+    id: 3,
+    name: 'Orange',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Orange_logo.svg/240px-Orange_logo.svg.png',
+    time: '48 horas',
+    method: 'Por IMEI',
+    instant: false
+  },
+  {
+    id: 4,
+    name: 'Yoigo',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Yoigo_Logo.svg/240px-Yoigo_Logo.svg.png',
+    time: 'En el acto',
+    method: 'Mayoría libres desde 2014',
+    instant: true
   }
 ];
 
