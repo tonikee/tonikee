@@ -12,6 +12,8 @@ const Header = () => {
     { name: 'Inicio', href: '/' },
     { name: 'DIGI', href: '/digi' },
     { name: 'Reparaciones', href: '/reparaciones' },
+    { name: 'Accesorios', href: '/accesorios' },
+    { name: 'Liberaciones', href: '/liberaciones' },
     { name: 'Sobre Nosotros', href: '/sobre-nosotros' },
     { name: 'Contacto', href: '/contacto' }
   ];
