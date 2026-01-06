@@ -60,11 +60,11 @@ const RepairsPage = () => {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md lg:max-w-sm">
                 <img
-                  src="https://images.pexels.com/photos/6755057/pexels-photo-6755057.jpeg"
-                  alt="Reparación express de móviles"
+                  src="https://images.unsplash.com/photo-1550041473-d296a3a8a18a"
+                  alt="Técnico profesional reparando móvil"
                   className="w-full h-auto object-cover"
                 />
               </div>
